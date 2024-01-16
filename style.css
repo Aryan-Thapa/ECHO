@@ -1,114 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@300&family=Rubik+Maps&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'inter';
-    text-decoration: none;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@300&family=Rubik+Maps&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "inter";
+	text-decoration: none;
 }
-body{
-    display: flex;
-    width: 100vw;
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
 }
-h1,h2{
-    color: #002D62;
-}
-
-.leftcontainer{
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    gap: 5rem;
-}
-.logocont{
-    width: 5rem;
-    height: 4rem;
-    border-radius: 50%;
-    object-fit: contain;
-}
-.maincont{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-.logo{
-    width: 5rem;
-    height: 4rem;
-    border-radius: 50%;
-}
-button{
-    display: flex;
-    justify-content: flex-start;
-    gap: 7rem;
-    height: 4rem;
-    width: 25rem;
-    align-items: center;
-    border-color: blue;
-    color: blue;
-    padding: 0.5rem;
-    font-weight: bold;
-    border-radius: 5px;
-}
-button:hover{
-    cursor: pointer;
-}
-.or{
-    margin-left: 12rem;
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: rgb(200, 197, 197);
-    font-weight: bold;
-}
-.bimg{
-    width: 10%;
-    height: 85%;
-}
-a{
-    color: blue;
+h1,
+h2 {
+	color: #002d62;
 }
 
-.rightcontainer{
-    width: 60%;
-    background-color: #b9d9eb8f;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.leftcontainer {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	gap: 5rem;
 }
-.imgcontainer{
-    margin-left: -12rem;
-    margin-top: 5rem;
-    height: 30rem;
-    object-fit: contain;
+.logocont {
+	width: 5rem;
+	height: 4rem;
+	border-radius: 50%;
+	object-fit: contain;
 }
-.rightimg{
-    height: 100%;
+.maincont {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
-h2{
-    /* border: solid; */
-    width: 35%;
-    margin-left: 3rem;
+.logo {
+	width: 5rem;
+	height: 4rem;
+	border-radius: 50%;
 }
-#rcp{
-    width: 35%;
-    margin-left: 3rem;
-    color: #002D62;
-    font-weight:600;
+button {
+	display: flex;
+	justify-content: flex-start;
+	gap: 7rem;
+	height: 4rem;
+	width: 25rem;
+	align-items: center;
+	border-color: blue;
+	color: blue;
+	padding: 0.5rem;
+	font-weight: bold;
+	border-radius: 5px;
+}
+button:hover {
+	cursor: pointer;
+}
+.or {
+	margin-left: 12rem;
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: rgb(200, 197, 197);
+	font-weight: bold;
+}
+.bimg {
+	width: 10%;
+	height: 85%;
+}
+a {
+	color: blue;
 }
 
-.leftp{
-    width: 65%;
-    font-size: small;
-    font-weight: 500;
+.rightcontainer {
+	width: 100%;
+	background-color: #b9d9eb8f;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 100%;
 }
-.footer{
-    /* border: solid; */
-    font-size: small;
-    color: rgb(77, 76, 76);
+.imgcontainer {
+	height: 30rem;
+	object-fit: contain;
+	margin: auto;
+	margin-left: 2rem;
+}
+.rightimg {
+	height: 100%;
+    margin-left: -13.9rem;
+}
+h2 {
+	/* border: solid; */
+	width: 35%;
+	margin-left: 3rem;
+	font-size: 36px;
+}
+#rcp {
+	width: 35%;
+	margin-left: 3rem;
+	color: #002d62;
+	font-weight: 600;
+	margin-bottom: 3rem;
+	margin-top: 1rem;
+}
+
+.leftp {
+	width: 65%;
+	font-size: small;
+	font-weight: 500;
+}
+.footer {
+	/* border: solid; */
+	font-size: small;
+	color: rgb(77, 76, 76);
 }
 @media screen and (max-width: 1150px) {
 	body {
@@ -132,6 +141,7 @@ h2{
 	}
 	.rightimg {
 		height: 20rem;
+        margin-left: auto;
 	}
 	.leftcontainer {
 		width: auto;
