@@ -110,37 +110,39 @@ h2{
     font-size: small;
     color: rgb(77, 76, 76);
 }
- @media screen and (max-width:1024px){
-    body{
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-    .leftp{
-        display: none;
-    }
-    h2{
-        display: none;
-    }
-    #rcp{
-        display: none;
-    }
-    h1{
-        display: none;
-    }
-    .rightcontainer{
-        background-color: transparent;
-    }
-    .rightimg{
-        height: 50%;
-    }
-    .rightcontainer{
-        width: auto;
-    }
-    .imgcontainer {
-        margin-left: 0;
-        margin-top: 0; 
-        height: auto;
-        object-fit: contain;
-    }
- }
+@media screen and (max-width: 1150px) {
+	body {
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+		overflow-x: hidden;
+		height: 100vh;
+	}
+	.leftp,
+	h2,
+	#rcp,
+	h1,
+	.logocont {
+		display: none;
+	}
+
+	.rightcontainer {
+		background-color: transparent;
+		height: fit-content;
+	}
+	.rightimg {
+		height: 20rem;
+	}
+	.leftcontainer {
+		width: auto;
+	}
+	.rightcontainer {
+		width: auto;
+	}
+	.imgcontainer {
+		margin-left: 0;
+		margin-top: 0;
+		height: auto;
+		object-fit: contain;
+	}
+}
